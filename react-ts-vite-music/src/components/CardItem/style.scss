@@ -1,0 +1,67 @@
+@import "../../style/variables.scss";
+
+.CardItem {
+  min-width: 10rem;
+  max-width: 15rem;
+  flex: 1;
+  border-radius: 0.2rem;
+  overflow: hidden;
+
+  @mixin hw {
+    height: 100%;
+    width: 100%;
+  }
+
+  @mixin onerow {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card {
+    border: none;
+    background: linear-gradient(to bottom, #0f0f0f, #1f1f1f);
+    display: flex;
+    flex-direction: column;
+    @include hw();
+    .ant-card-body {
+      padding: 1rem;
+    }
+
+    &:hover {
+      background: #292929;
+      cursor: pointer;
+    }
+
+    .card-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      .Loadbgk {
+        flex: 1;
+        border-radius: 0.2rem;
+      }
+
+      img {
+        @include hw();
+        overflow: hidden;
+      }
+
+      p {
+        @include onerow();
+        color: $main-font-color;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      span {
+        @include onerow();
+        font-size: $small-size-font;
+        color: $sub-small-font-color;
+      }
+    }
+  }
+}

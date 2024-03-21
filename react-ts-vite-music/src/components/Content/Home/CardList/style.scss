@@ -1,0 +1,43 @@
+@import '../../../../style/variables.scss';
+
+.CardList {
+    padding: 1rem;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: column;
+
+    .CardList-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0rem 0rem 1rem 1rem;
+
+        h1 {
+            margin: 0px;
+            color: $main-font-color;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        span {
+            color: $main-small-font-color;
+            font-size: $small-size-font;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .List {
+        display: flex;
+        gap: 1rem;
+        flex: 1;
+    }
+
+}

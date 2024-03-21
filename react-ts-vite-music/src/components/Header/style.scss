@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .username {
+    display: flex;
+    align-items: center;
+    .avatar-img {
+      height: 3rem;
+      border-radius: 50%;
+    }
+    h1{
+      color: white;
+      padding-left: 1rem;
+    }
+  }
+
+  .none {
+    display: none;
+  }
+}

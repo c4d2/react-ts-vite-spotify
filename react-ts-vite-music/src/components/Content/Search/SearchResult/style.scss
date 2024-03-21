@@ -1,0 +1,11 @@
+.SearchResult {
+  .result-item {
+    height: 2rem;
+    padding-left: 1rem;
+    line-height: 2rem;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba($color: #8a8a8a, $alpha: 0.1);
+    }
+  }
+}

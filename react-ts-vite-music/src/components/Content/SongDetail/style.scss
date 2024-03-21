@@ -1,0 +1,54 @@
+@import "../../../style/variables.scss";
+
+.SongDetail {
+  .detail {
+    background: #121212;
+    padding: 1rem;
+
+    #Lyric {
+      background: radial-gradient(
+        circle,
+        transparent 10%,
+        rgba(86, 86, 86, 0.9) 100%
+      );
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      height: 25rem;
+      overflow: auto;
+      position: relative;
+      text-align: center;
+      color: $main-small-font-color;
+
+      #active-lyric {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: $main-font-color;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+
+      #lyric {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        color: $main-small-font-color;
+        font-size: 1rem;
+      }
+    }
+
+    .text {
+      color: $main-font-color;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .list {
+      margin-top: 1rem;
+    }
+
+    .playlist {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.DetailHead {
+  height: 350px;
+  background-color: #121212;
+
+  .img {
+    position: relative;
+    overflow: hidden;
+    top: 0.5rem;
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    filter: blur(550px);
+  }
+
+  .head {
+    position: relative;
+    top: -22rem;
+    padding: 24px;
+    display: flex;
+    align-items: flex-end;
+    height: 25vh;
+    gap: 20px;
+    overflow: hidden;
+
+    .head-left {
+      width: 18%;
+      min-width: 200px;
+
+      img {
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+
+    .head-right {
+      color: white;
+
+      .title {
+        display: inline-block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 50vw;
+        font-size: 100px;
+        font-weight: bolder;
+      }
+
+      .description {
+        display: inline-block;
+        height: 60px;
+        font-size: 14px;
+        opacity: 0.8;
+        display: -webkit-box;
+        /* 将文本作为一个盒子来显示 */
+        -webkit-box-orient: vertical;
+        /* 垂直排列文本 */
+        -webkit-line-clamp: 3;
+        /* 最多显示三行文本 */
+        overflow: hidden;
+        /* 隐藏超出容器的文本 */
+        text-overflow: ellipsis;
+        /* 在文本末尾添加省略号 */
+        white-space: normal;
+        /* 允许文本换行 */
+        word-break: break-all;
+        /* 打断所有单词 */
+        width: 80%;
+        /* 容器的宽度 */
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .DetailHead {
+    height: 200px;
+    .img {
+      height: 150px;
+    }
+    .head {
+      top: -10rem;
+      .head-left {
+        min-width: 9rem;
+      }
+      .head-right {
+        .title {
+          font-size: 4rem;
+        }
+        .description {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

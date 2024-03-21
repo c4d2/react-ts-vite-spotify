@@ -1,0 +1,88 @@
+@import "../../style/variables.scss";
+
+.Song {
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 3rem 1.5rem 30rem 30rem 5rem 5rem;
+  height: 3rem;
+  gap: 1rem;
+  align-items: center;
+  color: $main-small-font-color;
+  font-size: 14px;
+
+  .number {
+    display: flex;
+    min-width: 5rem;
+    gap: 1rem;
+    .play-icon:hover {
+      color: #1ed760;
+    }
+    .add-music {
+      &:hover {
+        color: #1ed760;
+      }
+    }
+  }
+
+  @mixin textstyle {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    /* 垂直排列文本 */
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+  }
+
+  .vip {
+    border: #1ed760 1px solid;
+    border-radius: 5px;
+    color: #1ed760;
+  }
+
+  .title {
+    display: flex;
+    gap: 1rem;
+    height: 3rem;
+    align-items: center;
+    overflow: hidden;
+    img {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+
+    .title-text {
+      span {
+        @include textstyle();
+        color: white;
+        font-size: 1rem;
+      }
+
+      span:hover {
+        text-decoration: underline;
+      }
+
+      div:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: rgba(139, 137, 137, 0.5);
+    cursor: pointer;
+  }
+
+  .album {
+    @include textstyle();
+  }
+
+  .icon {
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.active {
+  background-color: rgba(139, 137, 137, 0.5);
+}

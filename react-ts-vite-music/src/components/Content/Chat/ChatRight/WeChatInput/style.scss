@@ -1,0 +1,48 @@
+.WeChatInput {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .emoji {
+    position: relative;
+    padding-right: 10px;
+  }
+
+  .Input_container {
+    height: 60%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Input_search {
+      padding-left: 20px;
+      height: 80%;
+      width: 85%;
+      border: none;
+      font-size: 16px;
+    }
+
+    .Input_search:focus {
+      outline: none;
+    }
+
+    .Input_button {
+      white-space: nowrap;
+      overflow: hidden;
+      min-width: 2rem;
+      cursor: pointer;
+      color: white;
+      border: none;
+      width: 15%;
+      height: 100%;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 0px;
+      background-color: #1ed760;
+    }
+  }
+}

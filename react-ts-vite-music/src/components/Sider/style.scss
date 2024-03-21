@@ -1,0 +1,98 @@
+@import "../../style/variables.scss";
+
+.Sider {
+  height: 100%;
+  width: 100%;
+  gap: 0.5rem;
+  flex-direction: column;
+  display: flex;
+
+  @mixin bg {
+    border-radius: 0.5rem;
+    background-color: $main-bg-color;
+  }
+
+  @mixin icon($color) {
+    color: $color;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .navigator {
+    margin-top: 0.5rem;
+    flex-shrink: 0;
+    height: 8rem;
+    @include bg();
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    padding-left: 2rem;
+    height: 4rem;
+    align-items: center;
+    display: flex;
+    color: $main-small-font-color;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+
+    .sider-icon {
+      @include icon($main-small-font-color);
+    }
+
+    &:hover {
+      .sider-icon {
+        @include icon($main-font-color);
+      }
+
+      color: $main-font-color;
+    }
+  }
+
+  .sideractive {
+    color: white;
+    background-color: rgba($color: #bebebe, $alpha: 0.1);
+
+    .sider-icon {
+      color: $main-font-color;
+    }
+  }
+
+  .myspace {
+    flex-grow: 1;
+    @include bg();
+    .addchat-icon {
+      padding-left: 1rem;
+      font-size: 1rem;
+      &:hover {
+        color: #1ed760;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Sider {
+    height: 4rem;
+    flex-direction: row;
+    .navigator {
+      margin-top: 0;
+      height: 4rem;
+      .link {
+        height: 4rem;
+        padding-left: 0;
+      }
+      flex-direction: row;
+    }
+    .myspace {
+      height: 4rem;
+      .link {
+        height: 4rem;
+        padding-left: 0;
+      }
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

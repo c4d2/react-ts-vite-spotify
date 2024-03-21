@@ -1,0 +1,49 @@
+.ChatSiderLink {
+  min-width: 5rem;
+  a {
+    height: 5rem;
+    width: 100%;
+    min-width: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    border-radius: 0.5rem;
+  }
+  .chatlink {
+    background-color: rgba(168, 167, 167, 0.2);
+  }
+  &:hover {
+    background-color: rgba(168, 167, 167, 0.1);
+    border-radius: 0.5rem;
+  }
+  .main {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    img {
+      height: 4rem;
+      border-radius: 0.5rem;
+    }
+
+    .center {
+      padding-left: 1rem;
+      color: white;
+      h4 {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      span {
+        font-size: 12px;
+        color: gray;
+      }
+    }
+  }
+
+  .right {
+    padding-right: 1rem;
+    color: gray;
+    font-size: 12px;
+  }
+}

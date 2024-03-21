@@ -1,0 +1,63 @@
+.WeChatMessage {
+  width: 95%;
+  height: 85%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse; /* 从下到上排列 */
+  align-items: flex-start; /* 可选：水平对齐方式 */
+  padding: 20px;
+
+  .receive-content {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+
+    .img-span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .img {
+        height: 43px;
+        width: 43px;
+        border-radius: 10px;
+      }
+
+      span {
+        color: gray;
+        font-size: small;
+      }
+    }
+
+    .receive {
+      display: flex;
+      flex-direction: column;
+      max-width: 90%;
+
+      .receive_message {
+        color: white;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        background-color: rgb(70, 223, 136);
+        position: relative;
+        p {
+          margin: 0.2rem;
+          word-wrap: break-word;
+        }
+      }
+
+      span {
+        color: gray;
+        font-size: 13px;
+      }
+    }
+  }
+  .history {
+    color: white;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+}

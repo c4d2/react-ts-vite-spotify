@@ -1,0 +1,10 @@
+/* 隐藏滚动条，只在滚动或悬停时显示 */
+::-webkit-scrollbar {
+  width: 6px; /* 滚动条宽度 */
+  opacity: 0; /* 初始状态下隐藏滚动条 */
+}
+
+/* 修改滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* 滚动条滑块颜色 */
+}

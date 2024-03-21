@@ -1,0 +1,22 @@
+@import '../../../style/variables.scss';
+
+.PlaylistDetail {
+    height: 100%;
+
+    .songtable {
+        width: 100%;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        .head-style {
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: 7rem 30.5rem 31rem 15rem;
+            height: 3rem;
+            align-items: center;
+            color: $main-small-font-color;
+            font-size: 14px;
+            border-bottom: 1px solid gray;
+        }
+    }
+}

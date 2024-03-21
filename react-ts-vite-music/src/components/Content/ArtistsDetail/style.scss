@@ -1,0 +1,15 @@
+@import '../../../style/variables.scss';
+
+.detail {
+    padding: 1rem;
+
+    .text {
+        color: $main-font-color;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .playlist{
+        display: flex;
+        gap: 1rem;
+    }
+}

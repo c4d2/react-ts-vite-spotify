@@ -1,0 +1,17 @@
+.PlayPauseButton {
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+    .pause {
+        padding-left: 20px;
+        color: #1ed760;
+        font-size: 70px;
+    }
+
+    .pause:hover {
+        padding-left: 15px;
+        font-size: 80px;
+        cursor: pointer;
+    }
+}
